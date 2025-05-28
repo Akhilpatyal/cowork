@@ -78,6 +78,7 @@ body {
   font-size: 18px;
   color: #8b87ab;
   overflow-x: hidden;
+  scroll-behavior: smooth; 
 }
 
 a {
@@ -311,7 +312,7 @@ label {
 }
 
 .breadcrumb .breadcrumb-item a {
-  color: #d85595;
+  color: #ffffff;
 }
 
 .breadcrumb .breadcrumb-item a:hover {
@@ -5028,17 +5029,17 @@ form.form-dark .form-control:focus {
   font-size: 20px;
   font-weight: 500;
   padding-left: 5px;
-  background: linear-gradient(130deg, #ff7979 0%, #9d1ebe 100%);
+    background: linear-gradient(130deg, #161d16 20%, #22be1e 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .location-wrapper.location-style-2:hover {
-  border-color: #d85595;
+  border-color: #1c6e1a;
 }
 
 .location-wrapper.location-style-2:hover .city-info .city-name {
-  background: linear-gradient(60deg, #ff7979 -20%, #9d1ebe 100%);
+  background: linear-gradient(130deg, #161d16 20%, #22be1e 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -7643,7 +7644,7 @@ background: linear-gradient(130deg, #161d16 20%, #22be1e 100%);
 .inner-header {
   position: relative;
   z-index: 5;
-  height: 500px;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7661,7 +7662,7 @@ background: linear-gradient(130deg, #161d16 20%, #22be1e 100%);
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(82, 0, 74, 0.15);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
   z-index: -1;
 }
 
@@ -9735,9 +9736,16 @@ background: linear-gradient(144deg, #000000 25%, #2b7b0e 100%);
 .newGradient-1{
    background: linear-gradient(130deg, #161d16 20%, #22be1e 100%);
 }
-.invert{
+/* .text-gradient-1{
+  font-family: "Cliz", serif; 
+    font-weight: 600;
+    background: linear-gradient(130deg, #161d16 20%, #22be1e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}  */
+/* .invert{
       filter: invert(1);
-}
+} */
 /* fonts */
 .Inter-f {
   font-family: "Inter", serif;
@@ -9750,3 +9758,12 @@ background: linear-gradient(144deg, #000000 25%, #2b7b0e 100%);
 .rounded-10{
   border-radius: 10px;
 }
+.fs-90{
+  font-size: 100px;
+}
+.parata-f{
+  font-family: "Prata", serif;
+    font-weight: 400;
+  font-style: normal;
+}
+/*  */
