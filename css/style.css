@@ -1873,7 +1873,7 @@ blockquote cite:before {
 }
 
 .blog-post-wrapper:not(.blog-style-3):hover .btn-arrow {
-  border: 1px solid #d85595;
+  border: 1px solid rgb(34, 190, 30);
 }
 
 .blog-post-wrapper:not(.blog-style-3):hover .btn-arrow svg path {
@@ -7385,7 +7385,10 @@ background: linear-gradient(130deg, #161d16 20%, #22be1e 100%);
   .navbar-nav
   .nav-item:has(.active)
   > .nav-link {
-  color: #d85595;
+     background: linear-gradient(359deg, #161d16 20%, #22be1e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
 }
 
 /*---------------------------------*/
@@ -9111,7 +9114,7 @@ background: linear-gradient(130deg, #161d16 20%, #22be1e 100%);
   .widget-newsletter
   .newsletter-form
   .form-control:focus {
-  border-color: #d85595;
+  border-color: #95e793;
 }
 
 .site-footer.footer-dark
@@ -9628,7 +9631,7 @@ background: linear-gradient(144deg, #000000 25%, #2b7b0e 100%);
   top: 0;
   bottom: 0;
   font-size: 24px;
-  color: #d85595;
+  color:rgb(69 245 59);
   width: 80px;
   background: none;
   border: none;
