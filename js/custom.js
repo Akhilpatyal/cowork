@@ -836,6 +836,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 // banner text ----------->
 
+
 let tl = gsap.timeline({
   scrollTrigger: {
     trigger: ".hero-heading",
@@ -856,6 +857,34 @@ tl.to(".hero-heading h1:nth-child(1)", {
   opacity: 0,
 }, "<"); // "<" starts at the same time
 
+
+
+  // Step 1: Split h4 text into spans
+  const h4 = document.querySelector(".perfect-space-filter-wrapper h4");
+  const text = h4.textContent;
+  h4.innerHTML = text
+    .split("")
+    .map(char => `<span class="letter">${char === " " ? "&nbsp;" : char}</span>`)
+    .join("");
+
+  // Step 2: Animate each span with stagger
+  gsap.from(".perfect-space-filter-wrapper .letter", {
+    y: 80,
+    opacity: 0,
+    duration: 0.8,
+    ease: "back.out(1.7)",
+    stagger: 0.05,
+    scrollTrigger: {
+      trigger: ".space-ptb",
+      scroller: "body",
+      start: "top 60%",
+      end: "top 20%",
+      scrub: 1,
+      toggleActions: "restart pause resume reverse",
+      // markers: true,
+    }
+  });
+ 
 // mobile
 
 let mm = gsap.matchMedia();
@@ -869,9 +898,9 @@ mm.add({
   let tl = gsap.timeline({
     scrollTrigger: {
       trigger: ".hero-heading",
-      start: isMobile ? "top 50%" : "top 35%",
+      start: isMobile ? "top 25%" : "top 35%",
       end: isMobile ? "top 10%" : "top 0%",
-      scrub: 2,
+      scrub: true,
       // markers: true,
     },
   });

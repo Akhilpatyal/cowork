@@ -5515,8 +5515,8 @@ form.form-dark .form-control:focus {
   .plan-price
   .period {
   color: #ffffff;
-  font-size: 18px;
-  line-height: 20px;
+  font-size: 20px;
+  line-height: 25px;
 }
 
 .workspaces-wrapper.workspaces-style2
@@ -5533,7 +5533,7 @@ form.form-dark .form-control:focus {
   z-index: -1;
   transition: all 0.3s ease-in-out;
   background-color: #d85595;
-  background: linear-gradient(130deg, #ff7979 0%, #9d1ebe 100%);
+  background: linear-gradient(320deg, #22be1e 0%, #000000 80%);
 }
 
 .workspaces-wrapper.workspaces-style2:hover
@@ -9776,4 +9776,5 @@ background: linear-gradient(144deg, #000000 25%, #2b7b0e 100%);
     font-weight: 400;
   font-style: normal;
 }
+ 
 /*  */
