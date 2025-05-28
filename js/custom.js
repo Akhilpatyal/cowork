@@ -856,20 +856,57 @@ tl.to(".hero-heading h1:nth-child(1)", {
   opacity: 0,
 }, "<"); // "<" starts at the same time
 
+// mobile
+
+let mm = gsap.matchMedia();
+
+mm.add({
+  // Conditions for mobile devices
+  isMobile: "(max-width: 767px)"
+}, (context) => {
+  let { isDesktop, isMobile } = context.conditions;
+
+  let tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".hero-heading",
+      start: isMobile ? "top 50%" : "top 35%",
+      end: isMobile ? "top 10%" : "top 0%",
+      scrub: 2,
+      // markers: true,
+    },
+  });
+
+  tl.to(".hero-heading h1:nth-child(1)", {
+    x: isMobile ? -50 : -100,  // smaller x for mobile
+    opacity: 0,
+  })
+  .to(".hero-heading h1:nth-child(2)", {
+    x: isMobile ? 50 : 100,
+    opacity: 0,
+  }, "<"); // start at the same time
+
+  return () => {
+    // Cleanup if needed on context change
+    tl.scrollTrigger.kill();
+    tl.kill();
+  };
+});
 
 // location cards --->>>>
 document.querySelectorAll(".location-wrapper").forEach((el, i) => {
   gsap.from(el, {
-    y: 40,
+    x: -40,
     opacity: 0,
-    duration: 0.2,
+   duration:.5,
     delay: i * 0.1,
-    ease: "power3.out",
+    ease: "power4.out",
     scrollTrigger: {
       trigger: el,
       start: "top 80%",
       end: "top 60%",
       toggleActions: "play none none none",
+    
     }
   });
 });
+ 
