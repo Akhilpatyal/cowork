@@ -3765,7 +3765,11 @@ div[cursor-type="arrow"] .owl-carousel,
   padding: 10px 45px;
   border-radius: 50px;
   background-color: #d85595;
-  background: linear-gradient(130deg, #ff7979 0%, #9d1ebe 100%);
+  transition: all 1s ease-in-out; /* ✅ Move here */
+  background: linear-gradient(130deg, #161d16 20%, #22be1e 100%);
+}
+.btn-primary:hover {
+  background: linear-gradient(160deg, #161d16 20%, #22be1e 100%);
 }
 
 /* Small Button Arrow ----------------*/

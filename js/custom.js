@@ -839,7 +839,7 @@ gsap.registerPlugin(ScrollTrigger);
 let tl = gsap.timeline({
   scrollTrigger: {
     trigger: ".hero-heading",
-    start: "top 35%",
+    start: "top 40%",
     end: "top 0%",
    
     scrub: 2,
