@@ -96,10 +96,10 @@
 
     <!--=================================
       Main Menu OffCanvas -->
-  <div class="offcanvas main-menu-offcanvas offcanvas-end" tabindex="-1" id="menuOffcanvas"
+    <div class="offcanvas main-menu-offcanvas offcanvas-end" tabindex="-1" id="menuOffcanvas"
       aria-labelledby="menuOffcanvasLabel">
       <div class="offcanvas-header">
-          <div class="site-logo">
+        <div class="site-logo">
           <a class="navbar-brand Inter-f" href="index.html">Urban<span>Grid.</span></a>
         </div>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><i
@@ -114,13 +114,11 @@
 
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link" href="location.html" role="button"
-                >Location</a>
+                <a class="nav-link" href="location.html" role="button">Location</a>
 
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link" href="workplaces.html" role="button"
-                >Workplaces</a>
+                <a class="nav-link" href="workplaces.html" role="button">Workplaces</a>
 
               </li>
               <li class="nav-item dropdown">
@@ -185,13 +183,16 @@
     <div class="site-content">
       <!--=================================
         Page Header -->
-      <div class="inner-header bg-holder" style="background-image: url(images/banner/inner-header/page-header-01.jpg);">
+      <div class="inner-header bg-holder overflow-hidden"
+        style="background-image: url(images/banner/inner-header/aboutBanner.png);">
         <div class="container">
           <div class="row  justify-content-center">
-            <div class="col-md-12 text-center">
-              <h1 class="title">About Us</h1>
+            <div class="col-md-12 text-center hero-heading">
+              <h1 class="title text-gradient-1  fs-90 parata-f">Who We Are.</h1>
+
+              <h1 class="title text-gradient-1  fs-90 parata-f">What We Stand For.</h1>
               <ul class="breadcrumb mb-0 p-0">
-                <li class="breadcrumb-item active"><a href="index-2.html">Home</a></li>
+                <li class="breadcrumb-item active"><a href="index-2.html">Home /</a></li>
                 <li class="breadcrumb-item"><span>About Us</span></li>
               </ul>
             </div>
@@ -276,13 +277,16 @@
           </div>
         </section>
 
-        <!--=================================
+        <!--================================= 
           Video -->
         <section class="video-bg-jarallax jarallax"
-          style="background-image: url(images/video-bg.jpg); background-position: center center; background-size: cover;">
-          <div class="video-wrapper wrapper-absolute" data-cursor-type="text" data-custom-text="Play">
-            <a class="popup-youtube video-btn cursor-style btn-hide"
-              href="https://www.youtube.com/watch?v=SZEflIVnhH8&amp;t=1s">Play</a>
+          style="background-image: url(images/video-bg.png); background-position: center center; background-size: cover;">
+          <div class="video-wrapper wrapper-absolute" data-cursor-type="text" data-custom-text="UrbanGrid">
+            <div class=" infor d-flex justify-content-center flex-column align-items-center h-100 " >
+              <h1 class="title text-light fs-90 parata-f">Redefining the Way</h1>
+
+              <h1 class="title text-light  fs-90 parata-f">People Work Together</h1>
+            </div>
           </div>
         </section>
 
@@ -598,10 +602,10 @@
             <div class="col-lg-12">
               <div class="footer-main-inner">
                 <div class="footer-logo">
-                   <div class="widget widget-logo site-logo mb-5"> 
+                  <div class="widget widget-logo site-logo mb-5">
                     <!-- <img class="img-fluid" src="images/logo-light.svg" alt="logo" /> -->
-                     <a class="navbar-brand Inter-f pt-4" href="index.html">Urban<span>Grid.</span></a>
-                       </div>
+                    <a class="navbar-brand Inter-f pt-4" href="index.html">Urban<span>Grid.</span></a>
+                  </div>
                   <div class="widget widget-menu">
                     <h4 class="widget-title">Quick Links</h4>
                     <ul class="list-unstyled list-col-3 mb-0">
@@ -666,6 +670,7 @@
   </div>
   <!--=================================
     Javascript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <!-- JS Global Compulsory (Do not remove)-->
   <script src="js/jquery-3.7.1.min.js"></script>
   <script src="js/jquery.appear.js"></script>

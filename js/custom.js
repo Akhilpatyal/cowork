@@ -1,3 +1,4 @@
+gsap.registerPlugin(ScrollTrigger);
 /*
 
 Template: Hobzz - Business and Coworking HTML Template
@@ -38,7 +39,6 @@ NOTE: This file contains all scripts for the actual Template.
 [ End table content ]
 ======================================*/
 //POTENZA var
- 
 
 (function ($) {
   "use strict";
@@ -832,17 +832,14 @@ NOTE: This file contains all scripts for the actual Template.
 
 // gsap
 
-gsap.registerPlugin(ScrollTrigger);
-
 // banner text ----------->
-
 
 let tl = gsap.timeline({
   scrollTrigger: {
     trigger: ".hero-heading",
     start: "top 40%",
-    end: "top 0%",
-   
+    end: "top 10%",
+
     scrub: 2,
     // markers: true,
   },
@@ -851,74 +848,83 @@ let tl = gsap.timeline({
 tl.to(".hero-heading h1:nth-child(1)", {
   x: -100,
   opacity: 0,
-})
-.to(".hero-heading h1:nth-child(2)", {
-  x: 100,
-  opacity: 0,
-}, "<"); // "<" starts at the same time
-
-
-
-  // Step 1: Split h4 text into spans
-  const h4 = document.querySelector(".perfect-space-filter-wrapper h4");
-  const text = h4.textContent;
-  h4.innerHTML = text
-    .split("")
-    .map(char => `<span class="letter">${char === " " ? "&nbsp;" : char}</span>`)
-    .join("");
-
-  // Step 2: Animate each span with stagger
-  gsap.from(".perfect-space-filter-wrapper .letter", {
-    y: 80,
+}).to(
+  ".hero-heading h1:nth-child(2)",
+  {
+    x: 100,
     opacity: 0,
-    duration: 0.8,
-    ease: "back.out(1.7)",
-    stagger: 0.05,
-    scrollTrigger: {
-      trigger: ".space-ptb",
-      scroller: "body",
-      start: "top 60%",
-      end: "top 20%",
-      scrub: 1,
-      toggleActions: "restart pause resume reverse",
-      // markers: true,
-    }
-  });
- 
+  },
+  "<"
+); // "<" starts at the same time
+
 // mobile
 
 let mm = gsap.matchMedia();
 
-mm.add({
-  // Conditions for mobile devices
-  isMobile: "(max-width: 767px)"
-}, (context) => {
-  let { isDesktop, isMobile } = context.conditions;
+mm.add(
+  {
+    // Conditions for mobile devices
+    isMobile: "(max-width: 767px)",
+  },
+  (context) => {
+    let { isDesktop, isMobile } = context.conditions;
 
-  let tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".hero-heading",
-      start: isMobile ? "top 25%" : "top 35%",
-      end: isMobile ? "top 10%" : "top 0%",
-      scrub: true,
-      // markers: true,
-    },
-  });
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".hero-heading",
+        start: isMobile ? "top 25%" : "top 35%",
+        end: isMobile ? "top 10%" : "top 0%",
+        scrub: true,
+        // markers: true,
+      },
+    });
 
-  tl.to(".hero-heading h1:nth-child(1)", {
-    x: isMobile ? -50 : -100,  // smaller x for mobile
-    opacity: 0,
-  })
-  .to(".hero-heading h1:nth-child(2)", {
-    x: isMobile ? 50 : 100,
-    opacity: 0,
-  }, "<"); // start at the same time
+    tl.to(".hero-heading h1:nth-child(1)", {
+      x: isMobile ? -50 : -100, // smaller x for mobile
+      opacity: 0,
+    }).to(
+      ".hero-heading h1:nth-child(2)",
+      {
+        x: isMobile ? 50 : 100,
+        opacity: 0,
+      },
+      "<"
+    ); // start at the same time
 
-  return () => {
-    // Cleanup if needed on context change
-    tl.scrollTrigger.kill();
-    tl.kill();
-  };
+    return () => {
+      // Cleanup if needed on context change
+      tl.scrollTrigger.kill();
+      tl.kill();
+    };
+  }
+);
+
+// Step 1: Split h4 text into spans
+const h4 = document.querySelector(".perfect-space-filter-wrapper h4");
+const text = h4.textContent;
+h4.innerHTML = text
+  .split("")
+  .map(
+    (char) => `<span class="letter">${char === " " ? "&nbsp;" : char}</span>`
+  )
+  .join("");
+
+// Step 2: Animate each span with stagger
+gsap.from(".perfect-space-filter-wrapper .letter", {
+  y: 80,
+  opacity: 0,
+  duration: 0.8,
+  ease: "back.out(1.7)",
+  stagger: 0.05,
+  scrollTrigger: {
+    trigger: ".space-ptb",
+    scroller: "body",
+    start: "top 60%",
+    end: "top 20%",
+    scrub: 1,
+    toggleActions: "restart pause resume reverse",
+    // markers: true,
+  },
 });
 
 // location cards --->>>>
@@ -926,7 +932,7 @@ document.querySelectorAll(".location-wrapper").forEach((el, i) => {
   gsap.from(el, {
     x: -40,
     opacity: 0,
-   duration:.5,
+    duration: 0.5,
     delay: i * 0.1,
     ease: "power4.out",
     scrollTrigger: {
@@ -934,8 +940,9 @@ document.querySelectorAll(".location-wrapper").forEach((el, i) => {
       start: "top 80%",
       end: "top 60%",
       toggleActions: "play none none none",
-    
-    }
+    },
   });
 });
- 
+
+// blog  cards --->>>>
+

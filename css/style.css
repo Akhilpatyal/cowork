@@ -1932,7 +1932,7 @@ blockquote cite:before {
   border-radius: 10px;
   background: linear-gradient(
     180deg,
-    rgba(0, 0, 0, 0) 30%,
+    rgba(0, 0, 0, 0) 0%,
     rgba(0, 0, 0, 0.7) 100%
   );
 }
@@ -1970,9 +1970,9 @@ blockquote cite:before {
   background-image: linear-gradient(
     to left,
     #ffffff,
-    #ffffff 33.33333%,
-    #9d1ebe 66.66666%,
-    #ff7979
+    #22be1e 33.33333%,
+    #22be1e 66.66666%,
+    #f6fcf6
   );
 }
 
@@ -6776,6 +6776,7 @@ form.form-dark .form-control:focus {
   top: 0;
   bottom: 0;
   cursor: none;
+  background: linear-gradient(183deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1));
 }
 
 @media (max-width: 767px) {
@@ -7666,7 +7667,7 @@ background: linear-gradient(130deg, #161d16 20%, #22be1e 100%);
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1));
   z-index: -1;
 }
 
@@ -8476,6 +8477,7 @@ background: linear-gradient(130deg, #161d16 20%, #22be1e 100%);
 /*----------------------------------*/
 .video-bg-jarallax {
   height: 70vh;
+
 }
 
 /*----------------------------------*/
@@ -9317,7 +9319,11 @@ background: linear-gradient(130deg, #161d16 20%, #22be1e 100%);
 }
 
 .widget-recent-posts .recent-posts .post-info .post-title:hover {
-  color: #d85595;
+  /* color: #d85595; */
+   font-weight: 600;
+    background: linear-gradient(130deg, #161d16 20%, #22be1e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .widget-recent-posts .recent-posts:last-child {
@@ -9740,13 +9746,13 @@ background: linear-gradient(144deg, #000000 25%, #2b7b0e 100%);
 .newGradient-1{
    background: linear-gradient(130deg, #161d16 20%, #22be1e 100%);
 }
-/* .text-gradient-1{
-  font-family: "Cliz", serif; 
+.text-color{
+   
     font-weight: 600;
     background: linear-gradient(130deg, #161d16 20%, #22be1e 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}  */
+} 
 /* .invert{
       filter: invert(1);
 } */
@@ -9767,7 +9773,7 @@ background: linear-gradient(144deg, #000000 25%, #2b7b0e 100%);
 }
 @media (max-width: 991px) {
   .fs-90{
-    font-size: 60px;
+    font-size: 45px;
   }
   
 }
@@ -9776,5 +9782,26 @@ background: linear-gradient(144deg, #000000 25%, #2b7b0e 100%);
     font-weight: 400;
   font-style: normal;
 }
- 
+.Cinzel-f{
+  font-family: "Cinzel", serif;
+    font-weight: 400;
+  font-style: normal;
+}
+
+ .blog-post-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent);
+  z-index: 1;
+  pointer-events: none;
+  border-radius: 8px;
+}
 /*  */
