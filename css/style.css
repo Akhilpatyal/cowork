@@ -78,7 +78,7 @@ body {
   font-size: 18px;
   color: #8b87ab;
   overflow-x: hidden;
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
 }
 
 a {
@@ -376,7 +376,7 @@ blockquote {
   margin: 0;
   color: #000000;
   font-weight: 500;
-  border-left: 4px solid #d85595;
+  border-left: 4px solid #065a03;
   border-radius: 10px;
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
 }
@@ -386,7 +386,11 @@ blockquote cite {
   gap: 10px;
   line-height: normal;
   align-items: center;
-  color: #d85595;
+  text-transform: uppercase;
+  font-weight: 600;
+  background: linear-gradient(187deg, #161d16 60%, #22be1e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 blockquote cite:before {
@@ -394,7 +398,7 @@ blockquote cite:before {
   width: 30px;
   height: 2px;
   display: inline-block;
-  background: #d85595;
+  background: #22be1e;
 }
 
 /*===============================================*/
@@ -537,7 +541,7 @@ blockquote cite:before {
 
 .bg-primary-gradient {
   background-color: #d85595;
-   background: linear-gradient(97deg, #161d16 20%, #0a2309 100%);
+  background: linear-gradient(97deg, #161d16 20%, #0a2309 100%);
 }
 
 /* Transform Rotate Left */
@@ -1483,11 +1487,11 @@ blockquote cite:before {
 }
 
 .accordion .accordion-item h5.accordion-header .accordion-button:hover {
-  color: #d85595;
+  color: #16a514;
 }
 
 .accordion .accordion-item h5.accordion-header .accordion-button:hover:after {
-  color: #d85595;
+  color: #22be1e;
 }
 
 .accordion
@@ -1497,9 +1501,9 @@ blockquote cite:before {
   box-shadow: inherit;
   outline: inherit;
   color: #ffffff;
-  border-image: linear-gradient(to right, #ff7979, #9d1ebe) 1;
+  border: #22be1e;
   background-color: #d85595;
-  background: linear-gradient(170deg, #ff7979 0%, #9d1ebe 100%);
+  background: linear-gradient(to left, #000000 33.33333%, #000000 66.66666%, #22be1e);
 }
 
 .accordion
@@ -1857,7 +1861,12 @@ blockquote cite:before {
 
 .blog-post-wrapper .post-title a {
   color: #000000;
-  background-image: linear-gradient(to left, rgb(0, 0, 0) 33.3333%, rgb(0, 0, 0) 66.6667%, rgb(34, 190, 30));
+  background-image: linear-gradient(
+    to left,
+    rgb(0, 0, 0) 33.3333%,
+    rgb(0, 0, 0) 66.6667%,
+    rgb(34, 190, 30)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 300% 100%;
@@ -2016,7 +2025,7 @@ blockquote cite:before {
 }
 
 .mygradient stop.end-color {
-  stop-color: #302f2f ;
+  stop-color: #302f2f;
 }
 
 /* Infobox Style 1 */
@@ -3403,7 +3412,7 @@ div[cursor-type="arrow"] .owl-carousel,
 .pgs-accordion .accordion-item.is-active {
   border-color: transparent;
   background-color: #d85595;
-     background: linear-gradient(130deg, #050505 0%, #08350f 100%);
+  background: linear-gradient(130deg, #050505 0%, #08350f 100%);
   /* Accordion Active Content */
 }
 
@@ -3688,7 +3697,7 @@ div[cursor-type="arrow"] .owl-carousel,
   bottom: 10px;
   margin: auto;
   background-color: #d85595;
- background: linear-gradient(130deg, #161d16 20%, #22be1e 100%);
+  background: linear-gradient(130deg, #161d16 20%, #22be1e 100%);
   transition: all 0.5s ease-in-out;
   z-index: -1;
   border-radius: 100%;
@@ -3811,7 +3820,7 @@ div[cursor-type="arrow"] .owl-carousel,
 }
 
 .btn-arrow:hover {
-  border: 1px solid #000000!important;
+  border: 1px solid #000000 !important;
 }
 
 .btn-arrow:hover svg path {
@@ -3906,7 +3915,6 @@ div[cursor-type="arrow"] .owl-carousel,
   overflow: hidden;
   border: 1px solid #e8e8e8;
   border-radius: 100%;
-  
 }
 
 .client-logo-wrapper .city-item .city-name {
@@ -5033,7 +5041,7 @@ form.form-dark .form-control:focus {
   font-size: 20px;
   font-weight: 500;
   padding-left: 5px;
-    background: linear-gradient(130deg, #161d16 20%, #22be1e 100%);
+  background: linear-gradient(130deg, #161d16 20%, #22be1e 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -5799,7 +5807,7 @@ form.form-dark .form-control:focus {
   z-index: -1;
   transition: all 0.3s ease-in-out;
   background-color: #d85595;
-      background-image: linear-gradient(154deg, #000000 49.33333%, #22be1e 100%);
+  background-image: linear-gradient(154deg, #000000 49.33333%, #22be1e 100%);
 }
 
 .workspaces-style4
@@ -5998,7 +6006,7 @@ form.form-dark .form-control:focus {
   .workspaces-space-inner
   .total-space {
   font-weight: 600;
-      background-image: linear-gradient(154deg, #000000 49.33333%, #22be1e 100%);
+  background-image: linear-gradient(154deg, #000000 49.33333%, #22be1e 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -6882,8 +6890,8 @@ form.form-dark .form-control:focus {
 }
 
 .header-default .site-menu .main-menu .nav-item.active > a {
-background: linear-gradient(130deg, #161d16 20%, #22be1e 100%);
-   -webkit-background-clip: text;
+  background: linear-gradient(130deg, #161d16 20%, #22be1e 100%);
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 600;
 }
@@ -7391,10 +7399,10 @@ background: linear-gradient(130deg, #161d16 20%, #22be1e 100%);
   .navbar-nav
   .nav-item:has(.active)
   > .nav-link {
-     background: linear-gradient(359deg, #161d16 20%, #22be1e 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 600;
+  background: linear-gradient(359deg, #161d16 20%, #22be1e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
 }
 
 /*---------------------------------*/
@@ -8327,7 +8335,7 @@ background: linear-gradient(130deg, #161d16 20%, #22be1e 100%);
   width: 55px;
   font-size: 18px;
   font-weight: 600;
-  color:  #1c6e1a;
+  color: #1c6e1a;
 }
 
 .back-to-top svg path {
@@ -8477,7 +8485,6 @@ background: linear-gradient(130deg, #161d16 20%, #22be1e 100%);
 /*----------------------------------*/
 .video-bg-jarallax {
   height: 70vh;
-
 }
 
 /*----------------------------------*/
@@ -9320,10 +9327,10 @@ background: linear-gradient(130deg, #161d16 20%, #22be1e 100%);
 
 .widget-recent-posts .recent-posts .post-info .post-title:hover {
   /* color: #d85595; */
-   font-weight: 600;
-    background: linear-gradient(130deg, #161d16 20%, #22be1e 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  background: linear-gradient(130deg, #161d16 20%, #22be1e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .widget-recent-posts .recent-posts:last-child {
@@ -9350,7 +9357,10 @@ background: linear-gradient(130deg, #161d16 20%, #22be1e 100%);
 }
 
 .widget-categories .categories-list li a:hover {
-  color: #d85595;
+  font-weight: 600;
+  background: linear-gradient(130deg, #161d16 20%, #22be1e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /*-----------------------*/
@@ -9380,8 +9390,10 @@ background: linear-gradient(130deg, #161d16 20%, #22be1e 100%);
 
 .post-tag .tag-list li a:hover,
 .tags-widget .tag-list li a:hover {
-  color: #d85595;
-  border-color: #d85595;
+  background: linear-gradient(130deg, #161d16 20%, #22be1e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-color: #161d16;
 }
 
 .post-tag .tag-list li:last-child,
@@ -9478,7 +9490,7 @@ background: linear-gradient(130deg, #161d16 20%, #22be1e 100%);
   height: 0;
   transition: all 0.4s ease-in-out;
   background-color: #d85595;
-background: linear-gradient(144deg, #000000 25%, #2b7b0e 100%);
+  background: linear-gradient(144deg, #000000 25%, #2b7b0e 100%);
 }
 
 .widget-socail .socail-icon li a:hover i {
@@ -9562,7 +9574,7 @@ background: linear-gradient(144deg, #000000 25%, #2b7b0e 100%);
   font-size: 36px;
   font-weight: 700;
   color: #d85595;
-      background: linear-gradient(130deg, #fbfbfb 0%, #41812f 100%);
+  background: linear-gradient(130deg, #fbfbfb 0%, #41812f 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -9642,7 +9654,7 @@ background: linear-gradient(144deg, #000000 25%, #2b7b0e 100%);
   top: 0;
   bottom: 0;
   font-size: 24px;
-  color:rgb(69 245 59);
+  color: rgb(69 245 59);
   width: 80px;
   background: none;
   border: none;
@@ -9736,23 +9748,22 @@ background: linear-gradient(144deg, #000000 25%, #2b7b0e 100%);
 }
 .site-logo a {
   font-family: "Inter", serif;
-  font-size:xx-large;
+  font-size: xx-large;
   font-weight: 600;
-   background: linear-gradient(130deg, #161d16 20%, #22be1e 100%);
-   -webkit-background-clip: text;
+  background: linear-gradient(149deg, #161d16 20%, #22be1e 100%);
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.newGradient-1{
-   background: linear-gradient(130deg, #161d16 20%, #22be1e 100%);
+.newGradient-1 {
+  background: linear-gradient(130deg, #161d16 20%, #22be1e 100%);
 }
-.text-color{
-   
-    font-weight: 600;
-    background: linear-gradient(130deg, #161d16 20%, #22be1e 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-} 
+.text-color , .author-name {
+  font-weight: 600;
+  background: linear-gradient(130deg, #161d16 20%, #22be1e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 /* .invert{
       filter: invert(1);
 } */
@@ -9765,30 +9776,29 @@ background: linear-gradient(144deg, #000000 25%, #2b7b0e 100%);
 }
 
 /* borders */
-.rounded-10{
+.rounded-10 {
   border-radius: 10px;
 }
-.fs-90{
+.fs-90 {
   font-size: 100px;
 }
 @media (max-width: 991px) {
-  .fs-90{
+  .fs-90 {
     font-size: 45px;
   }
-  
 }
-.parata-f{
+.parata-f {
   font-family: "Prata", serif;
-    font-weight: 400;
+  font-weight: 400;
   font-style: normal;
 }
-.Cinzel-f{
+.Cinzel-f {
   font-family: "Cinzel", serif;
-    font-weight: 400;
+  font-weight: 400;
   font-style: normal;
 }
 
- .blog-post-img {
+.blog-post-img {
   position: relative;
   overflow: hidden;
 }
@@ -9804,4 +9814,40 @@ background: linear-gradient(144deg, #000000 25%, #2b7b0e 100%);
   pointer-events: none;
   border-radius: 8px;
 }
+.quickTip {
+  position: relative;
+  border: 1px solid #a5a3a3c4;
+  padding: 12px 12px;
+  border-radius: 10px;
+   transition: all 0.6s ease;
+}
+.quickTip h5 {
+  position: relative; /* Needed for the :after pseudo-element */
+  display: inline-block;
+}
+.quickTip h5::after {
+  content: "";
+  position: absolute;
+  width: 0%; /* Start with 0 width */
+  height: 2px;
+  background: linear-gradient(130deg, #161d16 20%, #22be1e 100%);
+  bottom: -10px;
+  left: 0;
+  z-index: 1;
+  border-radius: 10px;
+  transition: all 0.8s ease-in-out;
+}
+
+.quickTip:hover h5::after {
+  width: 100%; /* Expand to full width on hover */
+}
+.quickTip:hover {
+  border: 1px solid #2b7b0e;
+  padding: 12px 12px;
+  border-radius: 10px;
+  box-shadow: rgba(43, 123, 14, 0.2) 0px 7px 29px 0px;
+ 
+}
+ 
+ 
 /*  */

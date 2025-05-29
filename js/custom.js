@@ -851,7 +851,7 @@ tl.to(".hero-heading h1:nth-child(1)", {
 }).to(
   ".hero-heading h1:nth-child(2)",
   {
-    x: 100,
+    x: 102,
     opacity: 0,
   },
   "<"
