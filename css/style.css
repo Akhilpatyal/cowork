@@ -83,7 +83,7 @@ body {
 
 a {
   outline: medium none !important;
-  color: #d85595;
+  color: #076a04 ;
   transition: all 0.3s ease-in-out;
   text-decoration: none;
 }
@@ -316,7 +316,7 @@ label {
 }
 
 .breadcrumb .breadcrumb-item a:hover {
-  color: #d85595;
+  color: #ffffff;
 }
 
 .breadcrumb .breadcrumb-item:before {
@@ -2085,6 +2085,7 @@ blockquote cite:before {
   background-image: url("../images/infobox-pattern.png");
   background-position: center center;
   transition: all 0.3s ease-in-out;
+  transform: scale(0.8);
 }
 
 .infobox-style-2:hover {
@@ -2154,8 +2155,8 @@ blockquote cite:before {
   right: 10px;
   z-index: -1;
   opacity: 0;
-  background-color: #d85595;
-  background: linear-gradient(130deg, #ff7979 0%, #9d1ebe 100%);
+  background-color: #000000;
+  /* background: linear-gradient(130deg, #ff7979 0%, #9d1ebe 100%); */
   border-radius: 100%;
   transition: all 0.3s ease-in-out;
   transform: scale(0.8);
@@ -3115,6 +3116,7 @@ blockquote cite:before {
   background-size: 22px;
   height: 21px;
   width: 22px;
+  filter: invert(1);
 }
 
 .owl-carousel .owl-nav button.owl-prev.owl-next,
@@ -3132,6 +3134,7 @@ blockquote cite:before {
   background-size: 22px;
   height: 21px;
   width: 22px;
+    filter: invert(1);
 }
 
 .owl-carousel .owl-item img {
@@ -3403,6 +3406,7 @@ div[cursor-type="arrow"] .owl-carousel,
   position: relative;
   width: 23px;
   height: 25px;
+  filter: invert(1);
 }
 
 .pgs-accordion .accordion-item .accordion-content .pricing-link a svg path {
@@ -3988,7 +3992,7 @@ form .form-control::placeholder {
 form .form-control:focus {
   box-shadow: none;
   background: transparent;
-  border-color: #d85595;
+  border-color: #457f3a;
 }
 
 form .form-control:active {
@@ -5432,7 +5436,7 @@ form.form-dark .form-control:focus {
 
 .workspaces-wrapper .workspaces-inner .spaces-list li .list-label {
   font-size: 20px;
-  margin-left: 15px;
+  margin-left: 10px;
 }
 
 .workspaces-wrapper .workspaces-inner .spaces-list li .list-value {
@@ -5494,6 +5498,7 @@ form.form-dark .form-control:focus {
   padding: 10px 40px;
   margin-top: 25px;
   border-radius: 50px;
+  cursor: pointer;
 }
 
 .workspaces-wrapper.workspaces-style2
@@ -6082,7 +6087,7 @@ form.form-dark .form-control:focus {
   font-size: 20px;
   font-weight: 500;
   padding-left: 5px;
-  background: linear-gradient(130deg, #ff7979 0%, #9d1ebe 100%);
+ background: linear-gradient(130deg, #22be1e 0%, #000000 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -6102,7 +6107,7 @@ form.form-dark .form-control:focus {
   margin-top: 25px;
   border-radius: 50px;
   background-color: #d85595;
-  background: linear-gradient(130deg, #ff7979 0%, #9d1ebe 100%);
+      background-image: linear-gradient(154deg, #000000 49.33333%, #22be1e 100%);
 }
 
 .workspaces-single-wrapper .workspaces-info .plan-price .currency {
@@ -7506,7 +7511,7 @@ form.form-dark .form-control:focus {
   gap: 5px;
   padding-top: 25px;
   border-top: 3px solid #e8e8e8;
-  border-image: linear-gradient(to right, #ff7979, #9d1ebe) 1;
+  border-image: linear-gradient(to right, #22be1e, #161d16 ) 1;
 }
 
 .offcanvas-body .contact-info .number {
@@ -9764,9 +9769,9 @@ form.form-dark .form-control:focus {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-/* .invert{
+.invert{
       filter: invert(1);
-} */
+}
 /* fonts */
 .Inter-f {
   font-family: "Inter", serif;
@@ -9782,10 +9787,16 @@ form.form-dark .form-control:focus {
 .fs-90 {
   font-size: 100px;
 }
+.infor h1{
+  font-size: 6rem;
+}
 @media (max-width: 991px) {
   .fs-90 {
     font-size: 45px;
   }
+  .infor h1{
+  font-size: 2.8rem;
+}
 }
 .parata-f {
   font-family: "Prata", serif;
@@ -9851,3 +9862,39 @@ form.form-dark .form-control:focus {
  
  
 /*  */
+ 
+.link {
+    cursor: pointer;
+    /* font-size: 18px; */
+    position: relative;
+    white-space: nowrap;
+}
+
+.link::before,
+.link::after {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(130deg, #161d16 20%, #22be1e 100%);
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+}
+
+.link::before {
+    content: '';
+    /* show by default */
+} 
+.link--metis::before {
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s;
+}
+
+.link--metis:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+}
+
+
+
