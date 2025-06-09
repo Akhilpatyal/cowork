@@ -6147,7 +6147,7 @@ form.form-dark .form-control:focus {
   /* Workspaces Style 1 ------------*/
   .workspaces-wrapper.workspaces-style1 .workspaces-info {
     right: 20px;
-    bottom: 20px;
+    bottom: -120px;
     width: 350px;
     padding: 30px;
   }
@@ -9049,7 +9049,8 @@ form.form-dark .form-control:focus {
 .site-footer.footer-bg {
   background-color: #000000;
   background-image: url("../images/footer-bg.jpg");
-  background-position: bottom left;
+     background-position: bottom left;
+    background-repeat: no-repeat;
 }
 
 .site-footer .footer-padding {
@@ -9898,3 +9899,17 @@ form.form-dark .form-control:focus {
 
 
 
+@media (max-width: 791px) {
+ .workspaces-wrapper {
+    height: 34vh;
+}
+ .workspaces-wrapper .workspaces-inner {
+ 
+    overflow: visible;
+}
+.workspaces-single-wrapper .workspaces-info .floor-plan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+}
